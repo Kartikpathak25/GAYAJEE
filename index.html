@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Service Company</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.svg" alt="Company Logo">
+            <h1>GAYAJEE</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="text-content">
+                <h2>WELCOME TO GAYAJEE</h2>
+                <h1>Your <span id="changingWord" class="highlight">Predictive</span> Technology Optimization Hub</h1>
+                <script>
+                    const words = ["Innovative", "Adaptive", "Smart", "Efficient", "Dynamic", "Predictive"];
+                    let index = 0;
+                    function changeWord() {
+                        document.getElementById("changingWord").innerText = words[index];
+                        index = (index + 1) % words.length;
+                    }
+                    setInterval(changeWord, 1000);
+                </script>
+                <h2>Professional IT Solutions</h2>
+                <p>Empowering businesses with cutting-edge IT solutions,<br>
+                    from cybersecurity to cloud computing, AI-driven analytics, <br>
+                    and next-gen web development – your success, our expertise.</p>
+                <a href="#services" class="btn">Explore Services</a>
+            </div>
+            <div class="image-content">
+                <img src="https://merida.anahuac.mx/hs-fs/hubfs/apreu/Blog/2019%20Blog%20APREU/APREU%20Blog%20-%20Abril%2019/dribbble-shot_6.gif?width=1600&name=dribbble-shot_6.gif"
+                    alt="Animated IT Solutions">
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>
+            At GAYAJEE, we offer a comprehensive suite of IT services designed to empower your business and drive
+            innovation.
+            From enterprise applications and modern infrastructure to managed services and consulting, our solutions are
+            tailored
+            to meet your unique needs. With a focus on cutting-edge technology and exceptional customer support, we help
+            you
+            stay ahead in today's fast-paced digital landscape. Explore our services and discover how we can transform
+            your
+            business for the future.
+        </p>
+
+        <div class="service-list">
+            <!-- Service 1 -->
+            <div class="service-item">
+                <div class="service-image">
+                    <img src="serimg1.jpeg" alt="Enterprise Application">
+                </div>
+                <div class="service-content">
+                    <h3>Enterprise Application</h3>
+                    <p>
+                        We provide cutting-edge enterprise application solutions tailored to your business needs.
+                        From SAP S/4HANA to Salesforce CRM, our expertise ensures seamless integration and scalability.
+                    </p>
+                    <ul>
+                        <li>SAP S/4HANA</li>
+                        <li>QAD ERP</li>
+                        <li>Salesforce CRM</li>
+                        <li>Oracle E-Business Suite</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-item">
+                <div class="service-image">
+                    <img src="serimg2.jpeg" alt="Modern Infrastructure">
+                </div>
+                <div class="service-content">
+                    <h3>Modern Infrastructure</h3>
+                    <p>
+                        Transform your IT infrastructure with our modern solutions. We offer cloud enablement, DevOps,
+                        and hyperautomation to optimize your operations and drive efficiency.
+                    </p>
+                    <ul>
+                        <li>Cloud Enablement</li>
+                        <li>DevOps</li>
+                        <li>Hyperautomation</li>
+                        <li>Business Intelligence</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-item">
+                <div class="service-image">
+                    <img src="serimg3.jpeg" alt="Managed Services">
+                </div>
+                <div class="service-content">
+                    <h3>Managed Services</h3>
+                    <p>
+                        Our managed services ensure your IT systems run smoothly and securely. From cloud care to
+                        intelligent business monitoring, we've got you covered.
+                    </p>
+                    <ul>
+                        <li>As a Service</li>
+                        <li>Cloud Care</li>
+                        <li>Intelligent Business Monitoring</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-item">
+                <div class="service-image">
+                    <img src="serimg4.jpeg" alt="Consulting">
+                </div>
+                <div class="service-content">
+                    <h3>Consulting</h3>
+                    <p>
+                        Leverage our consulting expertise to drive digital transformation and innovation. We specialize
+                        in AI, blockchain, and generative AI to future-proof your business.
+                    </p>
+                    <ul>
+                        <li>Digital Transformation</li>
+                        <li>Generative AI</li>
+                        <li>Blockchain</li>
+                        <li>AI Native</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p class="bold-statement">Now is the time to be Inspiring.</p>
+        <p>
+            At GAYAJEE, we believe in pushing boundaries and embracing innovation to deliver cutting-edge IT solutions.
+            Our mission is to empower businesses with transformative technology that drives growth, efficiency, and
+            success.
+            With a team of passionate experts, we are committed to helping you navigate the ever-evolving digital
+            landscape.
+        </p>
+        <div class="team">
+            <div class="team-member">
+                <h3>Our Vision</h3>
+                <p>To be a global leader in providing innovative and reliable IT solutions that shape the future of
+                    businesses.</p>
+            </div>
+            <div class="team-member">
+                <h3>Our Mission</h3>
+                <p>To empower organizations with technology that drives efficiency, innovation, and sustainable growth.
+                </p>
+            </div>
+            <div class="team-member">
+                <h3>Our Values</h3>
+                <p>Integrity, Innovation, Collaboration, and Excellence are at the core of everything we do.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2>Latest Blog Posts</h2>
+        <div class="blog-list">
+            <!-- Blog Post 1 -->
+            <div class="blog-post">
+                <div class="blog-box">
+                    <h3>Emerging Trends in Web Development</h3>
+                    <p>Stay updated with the latest web technologies and frameworks shaping the industry.</p>
+                </div>
+                <img src="inmg3.jpg" alt="Web Development Trends" class="blog-image">
+            </div>
+
+            <!-- Blog Post 2 -->
+            <div class="blog-post">
+                <div class="blog-box">
+                    <h3>Cybersecurity Best Practices</h3>
+                    <p>Learn how to safeguard your business from cyber threats and data breaches.</p>
+                </div>
+                <img src="img2.gif" alt="Cybersecurity Best Practices" class="blog-image">
+            </div>
+
+            <!-- Blog Post 3 -->
+            <div class="blog-post">
+                <div class="blog-box">
+                    <h3>Cloud Solutions for Businesses</h3>
+                    <p>Explore the benefits of cloud computing and how it can optimize your IT infrastructure.</p>
+                </div>
+                <img src="ing1.jpeg" alt="Cloud Solutions" class="blog-image">
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p><strong>Email:</strong> info@gayajee.com</p>
+                <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+                <p><strong>Address:</strong> 123 Tech Street, Innovation City, IC 12345</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 IT Service Company. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
