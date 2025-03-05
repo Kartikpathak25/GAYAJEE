@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: #d864d0;
+    background-color: #2c3e50;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -689,4 +689,104 @@ footer {
     margin: 0 auto 40px;
     text-align: center;
 }
-/* Mobile Responsive Design */
+/* Footer Styles */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 60px 20px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-about,
+.footer-links,
+.footer-contact,
+.footer-social {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-about h3,
+.footer-links h3,
+.footer-contact h3,
+.footer-social h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #f4b400;
+}
+
+.footer-about p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+.footer-links ul,
+.footer-contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li,
+.footer-contact ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a,
+.footer-contact ul li {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #f4b400;
+}
+
+.footer-contact ul li i {
+    margin-right: 10px;
+    color: #f4b400;
+}
+
+.footer-social .social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social .social-icons a {
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.footer-social .social-icons a:hover {
+    color: #f4b400;
+    transform: translateY(-5px);
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    font-size: 14px;
+    color: #ddd;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}
+
+.footer-bottom i.fa-heart {
+    color: #ff4d4d;
+}
