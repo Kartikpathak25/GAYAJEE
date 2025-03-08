@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT Service Company</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="media-quries.css">
+    <script  src="scripts.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
 </head>
@@ -17,31 +18,30 @@
             <img src="logo.svg" alt="Company Logo">
             <h1>GAYAJEE</h1>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <button class="navbar-toggle" id="navbar-toggle">
+                    <span class="toggle-icon">&#9776;</span>
+                </button>
+            </div>
+            <ul class="navbar-menu" id="navbar-menu">
+                <li><a href="#" class="hover-link ">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>  
+                <li><a href="#">blog</a></li>
             </ul>
+            
         </nav>
     </header>
 
     <section id="home" class="hero">
         <div class="hero-content">
+            
+            
             <div class="text-content">
                 <h2>WELCOME TO GAYAJEE</h2>
-                <h1>Your <span id="changingWord" class="highlight">Predictive</span> Technology Optimization Hub</h1>
-                <script>
-                    const words = ["Innovative", "Adaptive", "Smart", "Efficient", "Dynamic", "Predictive"];
-                    let index = 0;
-                    function changeWord() {
-                        document.getElementById("changingWord").innerText = words[index];
-                        index = (index + 1) % words.length;
-                    }
-                    setInterval(changeWord, 1000);
-                </script>
+             
                 <h2>Professional IT Solutions</h2>
                 <p>Empowering businesses with cutting-edge IT solutions,<br>
                     from cybersecurity to cloud computing, AI-driven analytics, <br>
@@ -261,13 +261,13 @@
     </section>
 
     <footer>
-        <div class="footer-container">
-            <!-- Footer About Section -->
+        <!-- <div class="footer-container">
+            <!Footer About Section -->
             <div class="footer-about">
                 <h3>About GAYAJEE</h3>
                 <p>GAYAJEE is a leading IT service provider, empowering businesses with cutting-edge technology solutions. We specialize in web development, cybersecurity, cloud computing, and AI-driven analytics.</p>
             </div>
-    
+     
             <!-- Quick Links -->
             <div class="footer-links">
                 <h3>Quick Links</h3>
