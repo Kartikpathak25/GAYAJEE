@@ -15,13 +15,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2px 5px;
+    padding: 10px 20px; /* Increased padding for better appearance */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 600;
 }
+
+
 
 .logo {
     /* text-align: center;
@@ -57,9 +59,16 @@ nav ul li a {
     color: white;
     font-weight: bold;
     transition: color 0.3s;
-    font-size: 40px; /* Adjusted font size */
+    font-size: 24px; /* Adjusted font size for better responsiveness */
     margin-right: 10px; /* Reduced margin */
 }
+
+@media (max-width: 768px) {
+    nav ul li a {
+        font-size: 18px; /* Smaller font size for mobile */
+    }
+}
+
 
 nav ul li a:hover {
     color: #f4b400;
@@ -855,16 +864,16 @@ header {
     font-weight: bold;
   }
   
-  .navbar-menu {
+.navbar-menu {
     width: auto;
     height: auto;
     display: flex;
-
     justify-content: space-evenly;
     cursor: pointer;
     padding-top: 10px;
-    padding-bottom: 20px;
-  }
+    padding-bottom: 10px; /* Reduced padding for better responsiveness */
+}
+
   
   .navbar-menu li {
     margin-left: 20px;
@@ -895,7 +904,7 @@ header {
   /* Responsive Styles */
   @media (max-width: 768px) {
     .navbar-menu {
-      display: none;
+      display: none; /* Ensure the menu is hidden by default */
       flex-direction: column;
       width: 100%;
       background-color: #444;
@@ -904,6 +913,12 @@ header {
       left: -100%;
       padding-block: 20px;
     }
+
+    .navbar-menu.active {
+      display: flex; /* Show the menu when active */
+      left: 0; /* Position the menu correctly */
+    }
+
   
     .navbar-menu.active {
       left: 0;
