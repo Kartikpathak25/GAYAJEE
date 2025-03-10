@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
             event.preventDefault();
             const targetId = this.getAttribute("href").substring(1);
             document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
+            navbarMenu.classList.remove("active"); // Hide the menu after clicking
         });
     });
 
