@@ -1,4 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
+    const toggleButton = document.getElementById("navbar-toggle");
+    const navbarMenu = document.getElementById("navbar-menu");
+    
+    toggleButton.addEventListener("click", () => {
+        console.log("Toggle button clicked"); // Log statement to confirm button click
+        navbarMenu.classList.toggle("active");
+    });
+
     // Smooth scrolling for navigation links
     document.querySelectorAll("nav ul li a").forEach(anchor => {
         anchor.addEventListener("click", function(event) {
@@ -38,9 +46,3 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
-
-    document.querySelector(".toggle-services").addEventListener("click", function() {
-        var serviceDropdown = document.getElementById("serviceDropdown");
-        serviceDropdown.style.display = serviceDropdown.style.display === "none" ? "block" : "none";
-    });
-    
